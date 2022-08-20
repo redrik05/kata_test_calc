@@ -127,17 +127,14 @@ public class Main {
                     for (int i = 0; i < num/10; i++) {
                         convertNum+="X";
                     }
-                }
-                else if (num <= 49) {
-                    convertNum = "XL" + allRoman[num%10];
-                }
-                else if (num <= 89) {
+                } else if (num <= 49) {
+                    convertNum = "XL";
+                } else if (num <= 89) {
                     convertNum = "L";
                     for (int i = 0; i < (num/10) - 5; i++) {
                         convertNum+="X";
                     }
-                }
-                else if (num <100) {
+                } else if (num <100) {
                     convertNum = "XC";
                 } else {
                     convertNum = "C";
